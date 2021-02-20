@@ -4,9 +4,9 @@ import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
 import { themelight, themedark, themedarkblue } from "./theme";
 
-import GlobalStyle from "@src/styles/GlobalStyle";
+import Wrapper from "@common/Wrapper/";
 
-import ThemeToggleContext from "./ThemeToggleContext";
+import GlobalStyle from "@src/styles/GlobalStyle";
 
 import { setConfiguration } from "react-grid-system";
 setConfiguration({ breakpoints: [576, 769, 992, 1200] });

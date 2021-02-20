@@ -2,5 +2,21 @@ module.exports = {
   siteMetadata: {
     title: "andrewcircelli",
   },
-  plugins: ["gatsby-plugin-styled-components"],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@src": "src",
+          "@common": "src/components/common",
+          "@components": "src/components",
+          "@layouts": "src/layouts",
+          "@pages": "src/pages",
+          "@templates": "src/templates",
+        },
+        extensions: ["js"],
+      },
+    },
+    "gatsby-plugin-styled-components",
+  ],
 };
