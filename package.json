@@ -1,11 +1,12 @@
 {
-  "name": "andrewcircelli",
+  "name": "andrew-circelli",
   "version": "1.0.0",
   "private": true,
-  "description": "andrewcircelli",
+  "description": "Andrew Circelli Portfolio Site",
   "author": "Andrew Circelli",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "portfolio"
   ],
   "scripts": {
     "develop": "gatsby develop",
@@ -21,5 +22,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
   }
 }
