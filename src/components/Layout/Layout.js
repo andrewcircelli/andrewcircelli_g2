@@ -5,8 +5,10 @@ import { ThemeProvider } from "styled-components";
 import { themelight, themedark, themedarkblue } from "./theme";
 
 import Wrapper from "@common/Wrapper/";
+import Navbar from "./Navbar/Navbar";
 
 import GlobalStyle from "@src/styles/GlobalStyle";
+import ThemeToggleContext from "./ThemeToggleContext";
 
 import { setConfiguration } from "react-grid-system";
 setConfiguration({ breakpoints: [576, 769, 992, 1200] });
@@ -26,6 +28,11 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={themelight}>
       <>
         <GlobalStyle />
+
+        <ThemeToggleContext.Provider value={{ themelight }}>
+          <Navbar />
+        </ThemeToggleContext.Provider>
+
         <RootWrapper>{children}</RootWrapper>
       </>
     </ThemeProvider>
